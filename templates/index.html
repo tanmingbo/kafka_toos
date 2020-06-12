@@ -1,0 +1,58 @@
+<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+<html>
+<head>
+    <style media="screen">
+        h1{
+            width:3050px;
+            height:2250px;
+        }
+        .c1{
+            /*边框宽度与颜色有默认值，样式必须设置*/
+            border:solid;
+        }
+        .c2{
+            border:5px solid red;
+        }
+        .c3{
+            border:5px dashed green;
+        }
+        .c4{
+            border:5px dotted blue;
+        }
+        .c5{
+            border:3px double orange;
+            width: auto;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+    <form action="create_topic" method="post" class="c5">
+        输入创建的topic名字:<input type="text" name="topicname" />
+        kafka服务器地址:<input type="text" name="server_add" />
+        分区数:<input type="text" name="parttion_number" />
+        副本数:<input type="text" name="replication_number" />
+        <input  type="submit"  />
+    </form>
+
+<form action="topiclist" method="post" class="c5">
+    输入查询的topic名字:<input type="text" name="topicname" />
+    kafka服务器地址:<input type="text" name="server_add" />
+    <input  type="submit"  />
+</form>
+
+
+<form action="alter_topic" method="post" class="c5">
+    zk服务器地址:<input type="text" name="server_add" />
+    指定已存在topic:<input type="text" name="topicname" />
+    指定已存在parttion:<input type="text" name="parttion" />
+    指定副本所在kafka的id:<input type="text" name="replication_number" />
+    <input  type="submit"  />
+</form>
+
+</body>
+</html>
