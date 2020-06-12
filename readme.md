@@ -6,7 +6,8 @@
 
 ## 使用方法：
 1. go build 
-2. ./kafka_tools
-3. 访问: http://XXXX:8081
+2. 修改配置文件：./config/kafka.cfg
+3. ./kafka_tools
+4. 访问: http://XXXX:8081
 
 ![image-20200612103402684](img/image-20200612103402684.png)
